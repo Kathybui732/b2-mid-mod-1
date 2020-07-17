@@ -1,0 +1,8 @@
+<%= @park.name %>
+<%= @park.admission_price %>
+
+<% @park.rides.alpha_order.each do |ride| %>
+<%= ride.name %>
+<% end %>
+
+<%= @park.rides.average_rating %>
