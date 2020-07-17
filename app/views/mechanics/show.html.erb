@@ -1,0 +1,13 @@
+<%= @mechanic.name %>
+<%= @mechanic.years_of_experience %>
+
+<% @mechanic.rides.each do |ride| %>
+<%= ride.name %>
+<% end %>
+
+<%= form_tag "/mechanics/#{@mechanic.id}/ride_mechanics", method: :post do %>
+<%= label_tag :ride_id %>
+<%= text_field_tag :ride_id %>
+
+<%= submit_tag "Submit" %>
+<% end %>
