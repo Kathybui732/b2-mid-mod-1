@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe AmusementPark, type: :model do
+RSpec.describe Park, type: :model do
 
 	describe "relationships" do
 		it { should have_many :rides }
